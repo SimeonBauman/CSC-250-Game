@@ -1,22 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public int score = 0;
     public GameObject cube;
+    public Text scoreText;
+    public GameObject winText;
+    public int num = 40;
     // Start is called before the first frame update
     void Start()
     {
         score = 0;
-        drawSquares(12, 12);
+        drawSquares(num, 12);
+        winText.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(score);
+        
+        scoreText.text = score.ToString();
+        if(score >= num)
+        {
+            winText.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 
     void drawSquares(int Num, int radius)
