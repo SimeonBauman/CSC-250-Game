@@ -9,11 +9,12 @@ public class GameController : MonoBehaviour
     public Text scoreText;
     public GameObject winText;
     public int num = 40;
+    public int rad;
     // Start is called before the first frame update
     void Start()
     {
         score = 0;
-        drawSquares(num, 12);
+        drawSquares(num, rad);
         winText.SetActive(false);
     }
 
@@ -37,7 +38,7 @@ public class GameController : MonoBehaviour
         {
             float x = radius * (Mathf.Cos((ang * i) * Mathf.Deg2Rad));
             float z = radius * (Mathf.Sin((ang * i) * Mathf.Deg2Rad));
-            Instantiate(cube, new Vector3(x, 1.5f, z),new Quaternion(0,0,0,0));
+            Instantiate(cube, new Vector3(x, .75f, z),new Quaternion(0,0,0,0));
         }
     }
 }
