@@ -636,7 +636,7 @@ MonoBehaviour:
   cube: {fileID: 1322043576}
   scoreText: {fileID: 1584371138}
   winText: {fileID: 807263808}
-  num: 40
+  num: 12
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,14 +960,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322043576}
-  m_LocalRotation: {x: 0.46193978, y: 0.19134173, z: 0.19134173, w: 0.84462327}
-  m_LocalPosition: {x: 32.51, y: 3.53, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 45, y: 45, z: 45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1584371136
 GameObject:
   m_ObjectHideFlags: 0
